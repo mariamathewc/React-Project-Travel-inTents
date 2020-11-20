@@ -1,0 +1,35 @@
+.nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    margin: 0 auto;
+    
+
+}
+
+.name {
+    float: left;
+    list-style-type: none;
+    padding: 20px 5px 20px 5px;
+    color:white;
+}
+
+    .items {
+        float: right;
+        width: 100%;
+        max-width: 125px;
+        padding: 20px 5px 20px 5px;
+        text-align: end;
+        list-style-type: none;
+        
+    }
+
+
+
+
+
+
+
+
+

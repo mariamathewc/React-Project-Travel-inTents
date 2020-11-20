@@ -1,0 +1,32 @@
+.campground {
+    background: url(../images/Homepage.jpg) no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    background: url(../images/Campgrounds.jpg) no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 1.9em;
+    
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.listing {
+    list-style-type: none;
+    
+    
+}
+
+.formating {
+    font-size: 35px;
+    padding-bottom:10px;
+}
