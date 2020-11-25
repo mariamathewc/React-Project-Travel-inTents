@@ -23,3 +23,15 @@
     color: brown;
     margin: 0 0 20px;
 }
+
+.button {
+    background: #c00;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px 10px;
+    font-size:17px;
+    margin-left:20px;
+    margin-bottom:15px;
+
+    
+}

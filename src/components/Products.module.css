@@ -13,7 +13,6 @@
     position: absolute;
     text-align: center;
     font-size: 1.9em;
-    
     color: white;
     top: 50%;
     left: 50%;
@@ -22,21 +21,18 @@
 
 .listing {
     list-style-type: none;
-    
-    
 }
 
 .formating {
     font-size: 35px;
-    
     border-radius: 30px;
     color: white;
     padding: .1em .2em .1em;
     margin-left: 23em;
-    margin-right:23em;
+    margin-right: 23em;
     margin-bottom: 1em;
 }
+
     .formating:hover {
         background-color: lightskyblue;
-
     }

@@ -1,22 +1,23 @@
 import React from "react";
-import styles from "./Spring.module.css";
-import spring from "../../images/spring.jpg";
+import styles from "./CampCollections.module.css";
 import CampList from "./CampList";
+import { useLocation } from "react-router";
+
+const CampCollections = (props) => {
+
+    const location = useLocation();
+    const selectedSeason = location.state.code; 
+    console.log("test", location.state.campdetail[selectedSeason]);
 
 
-const Spring = (props) => {
-
-	console.log(props.camps[0])
-	//console.log(props.camps[0].title)
-	//console.log(props.camps[0].image._url)
     let displayContent;
 
-    if (props.camps[0].length) {
+    if (location.state.campdetail[selectedSeason].length) {
 
         displayContent = (
 
             <ul className={styles.container} >
-                {props.camps[0].map((camp) => (
+                {location.state.campdetail[selectedSeason].map((camp) => (
                    
                     <CampList camp={camp} key={camp.title} />
                 ))}
@@ -48,4 +49,4 @@ const Spring = (props) => {
 	
 }
 
-export default Spring 
+export default CampCollections 
