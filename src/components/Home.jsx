@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from "./Home.module.css";
 import { NavLink } from 'react-router-dom';
 
-class Home extends Component {
 
-	render() {
+	const Home = (props) => {
+	
 
 		return (
 			
@@ -27,7 +27,7 @@ class Home extends Component {
 				
 
 		)
-	}
+	
 }
 
 export default Home 

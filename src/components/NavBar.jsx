@@ -5,7 +5,7 @@ import styles from "./NavBar.module.css";
 class NavBar extends Component {
 
     render() {
-
+        let authedUser = null;
         return (
             <nav className={styles.nav}>
 
@@ -16,7 +16,7 @@ class NavBar extends Component {
 
                     <li className={styles.items}>
 
-                        <div><b> Hello, user </b> </div>
+                        <div><b> {authedUser ? <b>Hello {authedUser}</b> : ""}</b> </div>
 
                     </li>
                     <li className={styles.items}>
@@ -28,7 +28,7 @@ class NavBar extends Component {
                             state: {
                                 details: this.props.data
                             }
-                        }}  exact activeClassName='active' > <b>Campgrounds </b> </NavLink>
+                        }} exact activeClassName='active' > <b>Campgrounds </b> </NavLink>
                     </li>
                     <li className={styles.items}>
                         <NavLink to={{
@@ -36,13 +36,13 @@ class NavBar extends Component {
                             state: {
                                 details: this.props.data
                             }
-                        }}  exact activeClassName='active'  > <b>Products </b> </NavLink>
+                        }} exact activeClassName='active'  > <b>Products </b> </NavLink>
                     </li>
                     <li className={styles.items}>
                         <NavLink to='/' exact activeClassName='active'  ><b> Home </b></NavLink>
-                    </li>  
-                   
-                     
+                    </li>
+
+
 
                 </ul>
 

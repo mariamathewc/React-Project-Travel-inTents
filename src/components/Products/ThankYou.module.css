@@ -1,0 +1,20 @@
+.row {
+    background: pink;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top:0px;
+    left:0px;
+    text-align:center;
+    justify-items:center;
+}
+
+.texts {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

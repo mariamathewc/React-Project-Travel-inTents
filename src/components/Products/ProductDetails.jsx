@@ -6,13 +6,25 @@ import { useLocation } from "react-router";
 const ProductDetails = (props) => {
     const [inputValue, setinputValue] = useState(1);
 
-  let  handleChange = (e) => {
-      setinputValue(e.target.value);
+
+    let handleChange = (e) => {
+       
+        if (e.target.value < 0 || e.target.value > 30) {
+            setinputValue(1);
+        }
+        else {
+            setinputValue(e.target.value);
+        }
       console.log("inputValue", inputValue);
     }
 
-
+    function onKeyDown(keyEvent) {
+        if ((keyEvent.charCode || keyEvent.keyCode) === 13) {
+            keyEvent.preventDefault();
+        }
+    }
     const location = useLocation();
+
     let displayContent;
 
     if (location.state.details.features.length) {
@@ -56,28 +68,39 @@ const ProductDetails = (props) => {
             <div className={styles.column3}>
                 <h4>In Stock</h4>
 
-                <form className={styles.createquestionform}>
+                <form className={styles.createquestionform} onKeyDown={onKeyDown}>
                     <p>Enter Qty:</p>
                     <input
                         id='inputValue'
                         className={styles.input}
-                        type='text'
-                        placeholder='1'
+                        type='number'
+                        placeholder='0'
                         value={inputValue}
                         onChange={handleChange}
                         
                     />
                    
-                    <br/>
-                    
-                    <NavLink className={styles.btn} to={{
-                        pathname: '/checkout',
-                        state: {
-                            title: location.state.details.title,
-                            quantity: { inputValue }
-                        }
-                    }} exact activeClassName='active'  > <b>Buy Now </b> </NavLink>       
-                    
+                    <br />
+                    {(inputValue>0)?
+                        <NavLink className={styles.btn} to={{
+                            pathname: '/checkout',
+                            state: {
+                                title: location.state.details.title,
+                                image: location.state.details.image,
+                                price: location.state.details.price,
+                                quantity: { inputValue }
+                            }
+                        }} exact activeClassName='active'  > <b>Buy Now </b> </NavLink>
+                        : <NavLink className={styles.btndisabled} to={{
+                            pathname: '/checkout',
+                            state: {
+                                title: location.state.details.title,
+                                image: location.state.details.image,
+                                price: location.state.details.price,
+                                quantity: { inputValue }
+                            }
+                        }} exact activeClassName='active'  > <b>Buy Now </b> </NavLink>
+                    }
                 </form>
             </div>
             </div>
