@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    padding: 8% 8% 8% 8%;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .row {
+        font-size: 1.5em;
+        flex-direction: row;
+    }
+}
+
+/* Create two equal columns that sits next to each other */
+.column1 {
+    flex: 40%;
+    padding: 10px;
+    height: 600px;
+    background-color: green; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+    flex: 40%;
+    padding: 10px;
+    padding-left: 3%;
+    height: 600px;
+    background-color: yellow; /* Should be removed. Only for demonstration */
+}
+
+.column3 {
+    flex: 35%;
+    padding: 10px;
+    height: 600px;
+    background-color: pink; /* Should be removed. Only for demonstration */
+}

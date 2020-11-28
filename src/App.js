@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { isEmpty } from "lodash";
 import NavBar from './components/NavBar.jsx';
 import Home from './components/Home.jsx';
+import Account from './components/Account.jsx';
 import Login from './components/Login.jsx';
 import Campgrounds from './components/Campgrounds.jsx';
 import CampCollections from './components/Seasons/CampCollections.jsx';
@@ -39,6 +40,7 @@ function App() {
                     <NavBar data={fetchedData} />
                     <Route path='/' exact component={Home} />
                     <Route exact path="/login"><Login /></Route>
+                    <Route exact path="/account"><Account /></Route>
 
                     <Route path='/campgrounds' exact component={Campgrounds} />
                     <Route exact path="/spring"><CampCollections /></Route>
