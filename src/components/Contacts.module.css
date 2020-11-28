@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imageContainer {
+    height: 400px;
+    background: linear-gradient(to bottom, #ffffff 0%, #999 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(100vh - 400px);
+}
+
+.address {
+    width: 100%;
+    height: 100%;
+    padding-top:4%;
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #ffffff 0%, #BBB 100%);
+    border: 1px solid #CCC;
+    text-align: center;
+}
+
+.iconDetails {
+    width: 100%;
+    height: 100%;
+    
+}

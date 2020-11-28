@@ -118,12 +118,20 @@ const Login = (props) => {
     let handleChangeYear = (e) => {
         setbirthyear(e.target.value);
     }
-    
-    var selector = document.querySelector('input[name="gender"]:checked');
-    if (selector!=null) {
-        console.log(selector.value);
-        
+    let handleChangeGenders = (e) => {
+        setgenders(e.target.value)
+
     }
+   /* let handleChangeGender = (e) => {
+    var selector = document.querySelector('input[name="gender"]:checked');
+        if (selector != null) {
+            console.log(selector.value);
+            return selector.value
+        }
+        else {
+            return "no data";
+        }
+    }*/
     return (
 
 		<div className={styles.row}>
@@ -226,11 +234,11 @@ const Login = (props) => {
 
                     <p>Gender:</p>
                         <div >
-                            <input type="radio"  name="gender" value="Male" id="male" />
+                        <input onChange={handleChangeGenders} type="radio" name="gender" value="Male" id="male"  />
                             <label for="male">Male</label>
-                            <input type="radio"  name="gender" value="Female" id="female" />
+                        <input onChange={handleChangeGenders} type="radio"  name="gender" value="Female" id="female" />
                             <label for="female">Female</label>
-                            <input type="radio"  name="gender" value="Other" id="other" />
+                        <input onChange={handleChangeGenders} type="radio"  name="gender" value="Other" id="other" />
                             <label for="other">Other</label>
                         </div>
                     <p>Date of Birth:</p>
@@ -329,14 +337,15 @@ const Login = (props) => {
                             state: {
                                 firstname: firstname,
                                 lastname: lastname,
-                                address:address,
-                                city:city,
-                                state:state,
-                                zipcode:zipcode,
-                                country:country,
-                                email:email,
+                                address: address,
+                                city: city,
+                                state: state,
+                                zipcode: zipcode,
+                                country: country,
+                                email: email,
                                 phone: phone,
-                                genders:genders,
+                                genders: genders,
+                            
                                 birthday:birthday,
                                 birthmonth:birthmonth,
                                 birthyear:birthyear

@@ -15,7 +15,7 @@ const Account = (props) => {
                 <h2><em>Personal Information</em></h2>
                 <p><strong>First Name:</strong> {location.state.firstname}</p>
                 <p><strong>Last Name:</strong> {location.state.lastname}</p>
-                <p><strong>Gender:</strong> {location.state.gender}</p>
+                <p><strong>Gender:</strong> {location.state.genders}</p>
                 <p><strong>Date of Birth:</strong> {location.state.birthday} {location.state.birthmonth} {location.state.birthyear}</p>
 
         </div>
