@@ -20,7 +20,9 @@ const ProductCheckout = (props) => {
                 <h2>{location.state.title}</h2>
                 <h4>Quantity: {location.state.quantity.inputValue}</h4>
                 <h4>Toatal Amount: ${amt}</h4>
-                <NavLink className={styles.btn} to='/thankyou' exact activeClassName='active'  > <b>Confirm </b> </NavLink>
+                <NavLink className={styles.btn} to='/shipping' exact activeClassName='active'  > <b>Confirm </b> </NavLink>
+
+
             </div>
         </div>
 

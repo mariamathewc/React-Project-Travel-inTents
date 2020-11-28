@@ -27,6 +27,8 @@ const Login = (props) => {
     const [placecountry, setplacecountry] = useState("Enter Country");
     const [placeemail, setplaceemail] = useState("Enter Email Address");
     const [placephone, setplacephone] = useState("Enter Phone Number");
+
+
     function onKeyDown(keyEvent) {
         if ((keyEvent.charCode || keyEvent.keyCode) === 13) {
             keyEvent.preventDefault();
@@ -122,16 +124,7 @@ const Login = (props) => {
         setgenders(e.target.value)
 
     }
-   /* let handleChangeGender = (e) => {
-    var selector = document.querySelector('input[name="gender"]:checked');
-        if (selector != null) {
-            console.log(selector.value);
-            return selector.value
-        }
-        else {
-            return "no data";
-        }
-    }*/
+
     return (
 
 		<div className={styles.row}>
@@ -150,7 +143,8 @@ const Login = (props) => {
                         value={firstname}
                         onChange={handleChangeFirstName}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* Last Name:</p>
                     <input
                         id='lastname'
@@ -160,7 +154,8 @@ const Login = (props) => {
                         value={lastname}
                         onChange={handleChangeLastName}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* Street Address:</p>
                     <input
                         id='address'
@@ -170,7 +165,8 @@ const Login = (props) => {
                         value={address}
                         onChange={handleChangeAddress}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* City:</p>
                     <input
                         id='city'
@@ -180,7 +176,8 @@ const Login = (props) => {
                         value={city}
                         onChange={handleChangeCity}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* State:</p>
                     <input
                         id='state'
@@ -190,7 +187,8 @@ const Login = (props) => {
                         value={state}
                         onChange={handleChangeState}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* Zip Code:</p>
                     <input
                         id='zipcode'
@@ -200,7 +198,8 @@ const Login = (props) => {
                         value={zipcode}
                         onChange={handleChangeZipCode}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* Country:</p>
                     <input
                         id='country'
@@ -210,7 +209,8 @@ const Login = (props) => {
                         value={country}
                         onChange={handleChangeCountry}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* Email Address:</p>
                     <input
                         id='email'
@@ -220,7 +220,8 @@ const Login = (props) => {
                         value={email}
                         onChange={handleChangeEmail}
 
-                        required/>
+                        required />
+                    <br />
                     <p>* Phone No:</p>
                     <input
                         id='phone'
@@ -231,16 +232,17 @@ const Login = (props) => {
                         onChange={handleChangePhone}
 
                         required/>
-
+                    <br />
                     <p>Gender:</p>
                         <div >
                         <input onChange={handleChangeGenders} type="radio" name="gender" value="Male" id="male"  />
-                            <label for="male">Male</label>
+                            <label for="male">Male </label>
                         <input onChange={handleChangeGenders} type="radio"  name="gender" value="Female" id="female" />
-                            <label for="female">Female</label>
+                            <label for="female">Female </label>
                         <input onChange={handleChangeGenders} type="radio"  name="gender" value="Other" id="other" />
-                            <label for="other">Other</label>
-                        </div>
+                            <label for="other">Other </label>
+                    </div>
+                    <br />
                     <p>Date of Birth:</p>
                     <div>
                         <span>Month: </span>

@@ -16,6 +16,7 @@ import Products from './components/Products.jsx';
 import ProductCollections from './components/Products/ProductCollections.jsx';
 import ProductDetails from './components/Products/ProductDetails.jsx';
 import ProductCheckout from './components/Products/ProductCheckout.jsx';
+import ProductShipping from './components/Products/ProductShipping.jsx';
 import ThankYou from './components/Products/ThankYou.jsx';
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
                     <Route exact path="/food_processing"><ProductCollections /></Route>
                     <Route exact path="/productdetails"><ProductDetails /></Route>
                     <Route exact path="/checkout"><ProductCheckout /></Route>
+                    <Route exact path="/shipping"><ProductShipping /></Route>
                     <Route exact path="/thankyou"><ThankYou /></Route>
                 </Fragment>
             </div>
