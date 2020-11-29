@@ -8,6 +8,7 @@
     width: 100%;
     padding-right: 25%;
     padding-left: 35%;
+    padding-top:5%;
 }
 
 
@@ -26,7 +27,7 @@
     flex: 50%;
     padding: 20px;
     width: 80%;
-    background-color: lightcoral; /* Should be removed. Only for demonstration */
+    background-color: #5a7d72;
 }
 
 .iconDetails {
@@ -51,14 +52,15 @@
 }
 
 .btn {
-    background-color: firebrick;
+    background-color: #505451;
     font-size: 15px;
-    padding: 2% 25% 2% 20%;
     border-radius: 10px;
     width: 50%;
-    border: 1px solid pink;
-    color: black;
+    border: 1px solid darkgrey;
+    color: white;
     text-decoration: none;
-    margin-left: 20%;
     margin-top: 10%;
+    margin-left: 20%;
+    text-align: center;
+    line-height: 40px;
 }

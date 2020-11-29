@@ -247,6 +247,7 @@ const Login = (props) => {
                     <div>
                         <span>Month: </span>
                         <select onChange={handleChangeMonth} name="months" id="months"> 
+                            <option value="MM">MM</option>
                             <option value="January">January</option>
                             <option value="February">February</option>
                             <option value="March">March</option>
@@ -263,6 +264,7 @@ const Login = (props) => {
 
                         <span> Day: </span>
                         <select onChange={handleChangeDay} name="days" id="days">
+                            <option value="DD">DD</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -297,6 +299,7 @@ const Login = (props) => {
                         </select>
                         <span> Year: </span>
                         <select onChange={handleChangeYear} name="year" id="year">
+                            <option value="YYYY">YYYY</option>
                             <option value="2020">2020</option>
                             <option value="2019">2019</option>
                             <option value="2018">2018</option>

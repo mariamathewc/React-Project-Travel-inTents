@@ -21,15 +21,19 @@
     flex: 30%;
     padding: 10px;
     height: 300px;
-    background-color: lightgreen; /* Should be removed. Only for demonstration */
+    background-color: black
 }
 
 .column2 {
-    flex: 40%;
+    flex: 70%;
     padding: 10px;
     padding-left: 3%;
-    height: 900px;
-    background-color: yellow; /* Should be removed. Only for demonstration */
+    height: 300px;
+    background-image: linear-gradient(to right, rgba(55, 27, 7, .5), #eee 20% );
+    border: 1px solid #993300;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .iconDetails {
@@ -39,14 +43,14 @@
 
 
 .btn {
-    background-color: #008000;
+    background-color: saddlebrown;
     font-size: 15px;
-    padding: 10px 80px 10px 30px;
+    padding: 10px 40px 10px 40px;
     border-radius: 10px;
     width: 55%;
-    border: 1px solid green;
+    border: 1px solid brown;
     color: black;
     text-decoration: none;
     margin-top:10%;
-    margin-left: 40%;
+    margin-left: 70%;
 }

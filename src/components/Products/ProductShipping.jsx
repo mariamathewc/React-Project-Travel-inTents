@@ -137,7 +137,8 @@ const ProductShipping = (props) => {
         <div className={styles.row}>
             
                 <div className={styles.column1}>
-                    <h2> Shipping Address </h2>
+                <h2> Shipping Address </h2>
+                <br/>
                     <form className={styles.createquestionform} onKeyDown={onKeyDown}>
                         <p>* First Name:</p>
                         <input
@@ -218,6 +219,8 @@ const ProductShipping = (props) => {
 
           
             <div className={styles.column2}>
+                <h2> Credit Card </h2>
+                <br />
                 <form className={styles.createquestionform} onKeyDown={onKeyDown}>
                     <p>* Name on Card:</p>
                     <input

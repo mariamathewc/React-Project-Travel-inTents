@@ -30,11 +30,11 @@ const ProductDetails = (props) => {
     if (location.state.details.features.length) {
 
         displayContent = (
-
+            
             <ul className={styles.list} >
                 {location.state.details.features.map((feat) => (
                     <div key={feat.tag}>
-                        <p><b> {feat.tag}:</b>  {feat.desc}</p>
+                        <p><b><em> {feat.tag}:</em></b>  {feat.desc}</p>
                         
                     </div>
 
@@ -61,13 +61,16 @@ const ProductDetails = (props) => {
             </div>
             <div className={styles.column2}>
                 <h2>{location.state.details.title}</h2>
+                <br />
                 <h3>Price: {location.state.details.price}</h3>
+                <br />
                 <h4><b>Description:  </b> {location.state.details.description} </h4>
+                <br />
                 <h4><b>Features:{displayContent}</b> </h4>
             </div>
             <div className={styles.column3}>
                 <h4>In Stock</h4>
-
+                <br />
                 <form className={styles.createquestionform} onKeyDown={onKeyDown}>
                     <p>Enter Qty:</p>
                     <input
