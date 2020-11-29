@@ -10,9 +10,9 @@ const Campgrounds = (props) => {
 	
 
 		return (
-			<div className={styles.campground}>
+			
 			<div className={styles.container}>
-				
+				<div className={styles.text}>
 					<h2>Choose your camping season </h2>
 
 					<ul className={styles.listing}>
@@ -63,9 +63,9 @@ const Campgrounds = (props) => {
 						</li>
 					</ul>
 					
-				
+				</div>
 			</div>
-</div>
+
 		)
 	
 }

@@ -40,6 +40,7 @@ function App() {
              <div >
           
                 <Fragment >
+
                     <NavBar data={fetchedData} />
                     <Route path='/' exact component={Home} />
                     <Route exact path="/login"><Login /></Route>

@@ -5,50 +5,42 @@ import styles from "./NavBar.module.css";
 class NavBar extends Component {
 
     render() {
-        let authedUser = null;
+        
         return (
-            <nav className={styles.nav}>
+            <div className={styles.nav}>
+                <input type="checkbox" id={styles.navcheck} />
+                <div className={styles.navheader}>
+                    <div className={styles.navtitle}>
+                        Travel in Tents
+    </div>
+                </div>
+                <div className={styles.navbtn}>
+                    <label htmlFor={styles.navcheck}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
 
-                <ul>
-                    <li className={styles.name}>
-                        <b > Travel in Tents </b>
-                    </li>
-
-                    <li className={styles.items}>
-
-                        <div><b> {authedUser ? <b>Hello {authedUser}</b> : ""}</b> </div>
-
-                    </li>
-                    <li className={styles.items}>
-                        <NavLink to='/login' exact activeClassName='active'  > <b>Login </b> </NavLink>
-                    </li>
-                    <li className={styles.items}>
-                        <NavLink to={{
-                            pathname: '/campgrounds',
-                            state: {
-                                details: this.props.data
-                            }
-                        }} exact activeClassName='active' > <b>Campgrounds </b> </NavLink>
-                    </li>
-                    <li className={styles.items}>
-                        <NavLink to={{
-                            pathname: '/products',
-                            state: {
-                                details: this.props.data
-                            }
-                        }} exact activeClassName='active'  > <b>Products </b> </NavLink>
-                    </li>
-                    <li className={styles.items}>
-                        <NavLink to='/' exact activeClassName='active'  ><b> Home </b></NavLink>
-                    </li>
+                <div className={styles.navlinks}>
+                    <NavLink to='/' exact activeClassName='active'  >Home </NavLink>
+                    <NavLink to={{
+                        pathname: '/products',
+                        state: {
+                            details: this.props.data
+                        }
+                    }} exact activeClassName='active'  > Products </NavLink>
+                    <NavLink to={{
+                        pathname: '/campgrounds',
+                        state: {
+                            details: this.props.data
+                        }
+                    }} exact activeClassName='active' >Campgrounds  </NavLink>
+                    <NavLink to='/login' exact activeClassName='active'  > Login </NavLink>
 
 
-
-                </ul>
-
-
-
-            </nav>
+                </div>
+            </div>
         )
     }
 }

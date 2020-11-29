@@ -3,12 +3,8 @@
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    position: absolute;
-    text-align: center;
+    padding: 10.5% 20%;
     color: red;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -60%);
 }
 
     .cover > h2 {
@@ -21,7 +17,8 @@
     padding-top: 5em;
     font-size: 25px;
     color: saddlebrown;
-    padding-top: 370px;
+    padding-top: 30px;
+    padding-bottom:30px;
     text-align: center;
 }
 
