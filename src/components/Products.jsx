@@ -17,7 +17,7 @@ const Products = (props) => {
 
 				<ul className={styles.listing}>
 					<li className={styles.formating} >
-						<NavLink to={{
+						<NavLink className={styles.links} to={{
 							pathname: '/tents',
 							state: {
 								productdetail: location.state.details,
@@ -26,7 +26,7 @@ const Products = (props) => {
 						}} exact activeClassName='active'  > <b>Tents </b> </NavLink>
 					</li>
 					<li className={styles.formating}>
-						<NavLink to={{
+						<NavLink className={styles.links} to={{
 							pathname: '/lights',
 							state: {
 								productdetail: location.state.details,
@@ -35,7 +35,7 @@ const Products = (props) => {
 						}} exact activeClassName='active'  > <b>Lights </b> </NavLink>
 					</li>
 					<li className={styles.formating}>
-						<NavLink to={{
+						<NavLink className={styles.links} to={{
 							pathname: '/sleeping_gear',
 							state: {
 								productdetail: location.state.details,
@@ -44,7 +44,7 @@ const Products = (props) => {
 						}} exact activeClassName='active'  > <b>Sleeping Gear </b> </NavLink>
 					</li>
 					<li className={styles.formating}>
-						<NavLink to={{
+						<NavLink className={styles.links} to={{
 							pathname: '/packs_and_bags',
 							state: {
 								productdetail: location.state.details,
@@ -53,7 +53,7 @@ const Products = (props) => {
 						}} exact activeClassName='active'  > <b>Packs and Bags </b> </NavLink>
 					</li>
 					<li className={styles.formating}>
-						<NavLink to={{
+						<NavLink className={styles.links} to={{
 							pathname: '/food_processing',
 							state: {
 								productdetail: location.state.details,

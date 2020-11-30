@@ -5,26 +5,31 @@
     min-width: 100%;
     min-height: 100%;
 
-    font-size: 1.9em;
+    font-size: 1.7em;
     padding: 12.5% 20%;
     color: white;
 }
 
-.text> h2 {
-    color:darkred;
-    padding-bottom:8%;
-    top:0px;
-    text-align:center;
+.text > h2 {
+    color: #0d401e;
+    padding-bottom: 8%;
+    top: 0px;
+    text-align: center;
 }
 .listing {
     list-style-type: none;
     
 }
 
+.links {
+    color: #0d401e;
+    
+}
+
 .formating {
     font-size: 35px;
     border-radius: 30px;
-    color: white;
+    color: black;
     padding: .1em .2em .1em;
     position: center;
     text-align: center;

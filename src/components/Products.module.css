@@ -5,13 +5,13 @@
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    font-size: 1.9em;
+    font-size: 1.7em;
     padding: 12.5% 20%;
     color: white;
 }
 
 .text > h2 {
-    color: darkred;
+    color: #0d401e;
     padding-bottom: 8%;
     top: 0px;
     text-align: center;
@@ -27,6 +27,10 @@
     padding: .1em .2em .1em;
     position: center;
     text-align: center;
+}
+
+.links {
+    color: #0d401e;
 }
 
     .formating:hover {

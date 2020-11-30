@@ -17,7 +17,7 @@ const Campgrounds = (props) => {
 
 					<ul className={styles.listing}>
 						<li className={styles.formating} >
-							<NavLink to={{
+							<NavLink className={styles.links} to={{
 								pathname: '/spring',
 								state: {
 									campdetail: location.state.details,
@@ -26,7 +26,7 @@ const Campgrounds = (props) => {
 							}} exact activeClassName='active'  > <b>Spring </b> </NavLink>
 						</li>
 						<li className={styles.formating}>
-							<NavLink to={{
+							<NavLink className={styles.links}  to={{
 								pathname: '/summer',
 								state: {
 									campdetail: location.state.details,
@@ -35,7 +35,7 @@ const Campgrounds = (props) => {
 							}}  exact activeClassName='active'  > <b>Summer </b> </NavLink>
 						</li>
 						<li className={styles.formating}>
-							<NavLink to={{
+							<NavLink className={styles.links}  to={{
 								pathname: '/autumn',
 								state: {
 									campdetail: location.state.details,
@@ -44,7 +44,7 @@ const Campgrounds = (props) => {
 							}}  exact activeClassName='active'  > <b>Autumn </b> </NavLink>
 						</li>
 						<li className={styles.formating}>
-							<NavLink to={{
+							<NavLink className={styles.links}  to={{
 								pathname: '/winter',
 								state: {
 									campdetail: location.state.details,
@@ -53,7 +53,7 @@ const Campgrounds = (props) => {
 							}}  exact activeClassName='active'  > <b>Winter </b> </NavLink>
 						</li>
 						<li className={styles.formating}>
-							<NavLink to={{
+							<NavLink className={styles.links}  to={{
 								pathname: '/snow',
 								state: {
 									campdetail: location.state.details,
