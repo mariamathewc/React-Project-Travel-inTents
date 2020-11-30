@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState, Fragment } from "react";
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { isEmpty } from "lodash";
 import NavBar from './components/NavBar.jsx';
 import Home from './components/Home.jsx';
@@ -9,6 +9,7 @@ import Contacts from './components/Contacts.jsx';
 import Account from './components/Account.jsx';
 import Login from './components/Login.jsx';
 import About from './components/About.jsx';
+import NoMatch from './components/NoMatch.jsx';
 import Campgrounds from './components/Campgrounds.jsx';
 import CampCollections from './components/Seasons/CampCollections.jsx';
 import CampDetails from './components/Seasons/CampDetails.jsx';
@@ -40,8 +41,9 @@ function App() {
              <div >
           
                 <Fragment >
-
                     <NavBar data={fetchedData} />
+                    <Switch>
+                    
                     <Route path='/' exact component={Home} />
                     <Route exact path="/login"><Login /></Route>
                     <Route exact path="/about"><About /></Route>
@@ -66,6 +68,8 @@ function App() {
                     <Route exact path="/checkout"><ProductCheckout /></Route>
                     <Route exact path="/shipping"><ProductShipping /></Route>
                     <Route exact path="/thankyou"><ThankYou /></Route>
+                    <NoMatch />
+                    </Switch>
                 </Fragment>
             </div>
         </Router>

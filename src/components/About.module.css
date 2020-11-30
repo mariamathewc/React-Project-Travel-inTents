@@ -46,11 +46,9 @@
     text-align: center;
     cursor: pointer;
     width: 100%;
+    pointer-events: none;
 }
 
-    .button:hover {
-        background-color: #555;
-    }
 
 @media screen and (max-width: 650px) {
     .column {
